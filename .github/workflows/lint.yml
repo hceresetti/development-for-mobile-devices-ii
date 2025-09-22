@@ -9,7 +9,7 @@ jobs:
       run:
         working-directory: ./template
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install dependencies
         run: yarn
       - run: mv _eslintrc.js .eslintrc.js && mv _prettierrc.js .prettierrc.js
